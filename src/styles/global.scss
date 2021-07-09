@@ -1,0 +1,44 @@
+:root {
+  --white: #F5F5F5;
+  --gray-100: #D6D0CA;
+  --gray-800: #221E1F;
+  --orange-500: #F43800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--gray-800);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, button {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+h1, h2 {
+  font-family: 'Krona One';
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  max-width: calc(min(100vw, 1280px));
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@media(max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}

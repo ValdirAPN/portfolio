@@ -1,0 +1,15 @@
+.projectsSection {
+  background: var(--orange-500);
+  color: var(--white);
+
+  h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .projectsCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+}

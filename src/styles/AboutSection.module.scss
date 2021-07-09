@@ -1,0 +1,55 @@
+.aboutSection {
+  background: var(--white);
+
+  section {
+    display: grid;
+    align-items: center;
+
+    .textArea {
+      span {
+        color: var(--orange-500);
+      }
+
+      h1 {
+        font-size: 2rem;
+        margin: 1rem 0 2rem;
+      }
+
+      button {
+        margin: 2rem 0;
+
+        &:nth-of-type(n + 2) {
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .myPhoto {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+
+      margin: auto;
+    }
+
+    @media (min-width: 720px) {
+      padding-top: 0;
+      padding-bottom: 0;
+      
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+
+      .myPhoto {
+        border-radius: 0;
+        width: 100%;
+        height: unset;
+      }
+
+      .textArea {
+        max-width: 400px;
+      }
+    }
+  }
+}
